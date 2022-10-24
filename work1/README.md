@@ -8,7 +8,7 @@
 $ python .\point_operation.py image_path operation_type
 ```
 
-其中 `file_name` 为必选参数，表示图片所在路径。`operation_type` 为必选参数，表示点运算类型，提供了以下可选选项：
+其中 `image_path` 为必选参数，表示图片所在路径。`operation_type` 为必选参数，表示点运算类型，提供了以下可选选项：
 
 - `linear` ：线性点运算
 - `segment` ：分段线性点运算
@@ -55,6 +55,5 @@ $ python .\point_operation.py image_path operation_type
     	<img src="imgs/non_linear_original.png" >
     </center>
 </div>
-
 
 
