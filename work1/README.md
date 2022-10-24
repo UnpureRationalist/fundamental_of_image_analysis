@@ -1,50 +1,60 @@
-# 作业 1：图像去雾
+# 作业 1：点运算
 
 ## 1. 运行方式
 
 在终端输入以下命令：
 
 ```shell
-$ python .\haze_removal.py [file_name]
+$ python .\point_operation.py image_path operation_type
 ```
 
-其中 `file_name` 为可选参数，表示需要去雾的图片所在路径。默认为 `./imgs/` 路径下的有雾图片。
+其中 `file_name` 为必选参数，表示图片所在路径。`operation_type` 为必选参数，表示点运算类型，提供了以下可选选项：
+
+- `linear` ：线性点运算
+- `segment` ：分段线性点运算
+- `non_linear` ：非线性点运算
 
 
 
 ## 2. 示例
 
-以下图片左侧为有雾图片，右侧为暗通道先验算法去雾后图片。
-
-示例 1：
+原始灰度图为：
 
 <div>
     <center>
-    	<img src="imgs/img1.png" width="420">
-    	<img src="imgs/remove_img1.png" width="420">
-    </center>
-</div>
-
-示例 2：
-
-<div>
-    <center>
-    	<img src="imgs/img2.png" width="420">
-    	<img src="imgs/remove_img2.png" width="420">
-    </center>
-</div>
-
-示例 3：
-
-<div>
-    <center>
-    	<img src="imgs/img3.png" width="420">
-    	<img src="imgs/remove_img3.png" width="420">
+    	<img src="imgs/original.png" >
     </center>
 </div>
 
 
 
-## 3. 参考文献
+经过不同的点运算后，得到以下图片：
 
-[1] Kaiming He, Jian Sun, and Xiaoou Tang, “Single Image Haze Removal Using Dark Channel Prior,” IEEE Trans. Pattern Anal. Mach. Intell., vol. 33, no. 12, pp. 2341–2353, Dec. 2011, doi: 10.1109/TPAMI.2010.168.
+线性点运算：
+
+<div>
+    <center>
+    	<img src="imgs/linear_original.png" >
+    </center>
+</div>
+
+
+分段线性点运算：
+
+<div>
+    <center>
+    	<img src="imgs/segment_original.png" >
+    </center>
+</div>
+
+
+非线性点运算：
+
+<div>
+    <center>
+    	<img src="imgs/non_linear_original.png" >
+    </center>
+</div>
+
+
+
